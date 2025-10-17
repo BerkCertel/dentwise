@@ -4,3 +4,5 @@ npm install @prisma/extension-accelerate @prisma/client
 npx prisma init
 
 npx prisma db push
+
+https://www.prisma.io/docs/orm/more/help-and-troubleshooting/nextjs-help

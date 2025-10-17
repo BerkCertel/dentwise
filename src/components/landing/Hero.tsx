@@ -7,16 +7,7 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20 ">
       {/* GRID BG  */}
-      <div
-        className="
-  absolute inset-0
-  bg-[linear-gradient(to_right,#c2c2d6_1px,transparent_1px),linear-gradient(to_bottom,#c2c2d6_1px,transparent_1px)]
-  dark:bg-[linear-gradient(to_right,#33353a_1px,transparent_1px),linear-gradient(to_bottom,#33353a_1px,transparent_1px)]
-  bg-[size:4rem_4rem]
-  [mask-image:radial-gradient(ellipse_70%_70%_at_50%_0%,#000_70%,transparent_110%)]
-  opacity-40
-"
-      ></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#c2c2d6_1px,transparent_1px),linear-gradient(to_bottom,#c2c2d6_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#33353a_1px,transparent_1px),linear-gradient(to_bottom,#33353a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_0%,#000_70%,transparent_110%)] opacity-40"></div>
 
       {/* GRADIENT ORBS */}
       <div className="absolute top-20 left-1/4 w-72 h-72 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-3xl" />

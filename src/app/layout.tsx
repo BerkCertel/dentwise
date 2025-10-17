@@ -10,6 +10,7 @@ import {
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import UserSync from "@/components/utils/UserSync";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+    // appearance={{
+    //   variables: {
+    //     colorPrimary: "#3b82f6",
+    //     colorText: "#111827",
+    //     fontFamily: "Geist, sans-serif",
+    //   },
+    // }}
+    >
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased `}
@@ -44,7 +53,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <UserSync /> {children}
           </ThemeProvider>
         </body>
       </html>
